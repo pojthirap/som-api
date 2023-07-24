@@ -1,0 +1,49 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:55280",
+      "sslPort": 44351
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_CONNECTION_STRING": "Initial Catalog = XXXX; Data Source =XXXX; User ID=XXXX; Password=XXXX; Integrated Security = false; Pooling = true",
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=XXXX;AccountKey=XXXX;EndpointSuffix=core.windows.net"
+      }
+    },
+    "MyFirstAzureWebApp": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_CONNECTION_STRING": "Initial Catalog = XXXX; Data Source =XXXX; User ID=XXXX; Password=XXXX; Integrated Security = false; Pooling = true",
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=XXXX;AccountKey=XXXX;EndpointSuffix=core.windows.net"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true,
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://+:443;http://+:80",
+        "ASPNETCORE_HTTPS_PORT": "44360",
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=saleonmobilestorage;AccountKey=W5S0z/AQ9y/wcydwQ283Chaz0Uo50R3REYjrbnfXpPHl3WhgKtnd25VhWLxDQP/74GoRcwgjIU9w22R5ekEvrg==;EndpointSuffix=core.windows.net"
+      },
+      "httpPort": 51803,
+      "sslPort": 44360
+    }
+  }
+}
